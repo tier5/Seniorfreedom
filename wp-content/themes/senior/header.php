@@ -54,7 +54,10 @@
 
 </nav> -->
 <div class="logo">
-    <a href="#"><img src="<?php echo get_template_directory_uri();?>/images/sfi.png" alt="img"></a>
+    <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
+	$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+	?>
+	 <a href="<?php echo get_home_url(); ?>"><img src="<?php echo $image[0];?>" alt="img"></a>
     </div>
   <div class="full-menu">  
   <a href="#menu" class="menu-link active"><span></span> Menu</a>
@@ -80,8 +83,11 @@ wp_nav_menu( $params );
 <div class="clearfix"></div>
               </div>
               <div class="col-md-3 header-info">
-                  <p>Call To Find Out More</p>
-                  <h2>888-111-1111</h2>
+                 <?php if ( is_active_sidebar( 'header_phone' ) ) : ?>
+			<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+				<?php dynamic_sidebar( 'header_phone' ); ?>
+			</div><!-- #primary-sidebar -->
+		<?php endif; ?>
               </div>  
           </div>  
       </div>

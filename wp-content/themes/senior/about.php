@@ -49,40 +49,7 @@ get_header();
               <div class="contact-us">
         <h2>Contact Us</h2>
         <h3>Reassuring Reverse Mortgages</h3>
-        <form>
-          <div class="form-group">
-            <label>First Name</label>
-            <input type="text" class="form-control" placeholder="Your First Name">
-          </div>
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" class="form-control" placeholder="Your Last Name">
-          </div>
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" class="form-control" placeholder="Your Email Address">
-          </div>
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="text" class="form-control" placeholder="Your Phone number">
-          </div>
-          <div class="form-group">
-            <label>State</label>
-            <select class="form-control">
-              <option>Select Your State</option>
-              <option>Lorem Ipsum</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea class="form-control" placeholder="Your Message" rows="5"></textarea>
-          </div>
-          <div class="form-group submit-btn">
-            <div>
-              <input type="submit" value="Send Message">
-            </div>
-          </div>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="39" title="Contact form 1"]');?>
       </div>
           </div>
         </div>

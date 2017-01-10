@@ -47,6 +47,9 @@ nav li {
   padding: 10px 9px;
   position: relative;
 }
+nav li ul li{padding:0 3px;}
+
+nav li.menu-item-has-children:hover ul.sub-menu{display: block;}
 
 .menu li a {
   color: #fff;
@@ -132,13 +135,13 @@ a.menu-link { display: none; }
 .menu li a:hover { color: #fff; }
 
 .menu li li a:hover {
-  background: rgba(164,208,94,0.1);
-  color: #000;
+
+  color: #ccc;
 }
 
 .menu ul ul {
-  background: #fff;
-  border: solid 1px rgba(164,208,94,1);
+  background: rgba(162, 29, 33, 0.9);
+  border: solid 1px #A21D32;
   border-radius: 2px 2px 5px 5px;
   border-top: solid 2px transparent;
   display: none;
@@ -148,16 +151,16 @@ a.menu-link { display: none; }
   position: absolute;
   text-align: left;
   top: 43px;
-  width: 150px;
+  width: 228px;
   z-index: 999;
 }
 
 .chrome .js .menu > ul ul { top: 43px; }
 
-.menu ul ul.wide { width: 300px; }
+.menu ul ul.wide { width: 180px; }
 
 .menu ul ul li {
-  border-bottom: solid 1px rgba(164,208,94,0.5);
+  border-bottom: solid 1px #ccc;
   display: inline-block;
   position: relative;
 }

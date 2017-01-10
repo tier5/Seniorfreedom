@@ -405,3 +405,81 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+
+function my_wpcf7_dropdown_form($html) {
+	$text = 'Select Your State';
+	$html = str_replace('---', '' . $text . '', $html);
+	return $html;
+}
+add_filter('wpcf7_form_elements', 'my_wpcf7_dropdown_form');
+add_theme_support( 'custom-logo', array(
+	'height'      => 100,
+	'width'       => 400,
+	'flex-height' => true,
+	'flex-width'  => true,
+	'header-text' => array( 'site-title', 'site-description' ),
+) );
+add_action( 'after_setup_theme', 'theme_prefix_setup' );
+function theme_prefix_the_custom_logo() {
+	
+	if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+
+}
+
+
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Footer Description',
+		'id'            => 'footer_desc',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Footer Address',
+		'id'            => 'footer_address',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Footer menu',
+		'id'            => 'footer_menu',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Footer social',
+		'id'            => 'footer_social',
+		'before_widget' => '<div class="col-sm-6">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+register_sidebar( array(
+		'name'          => 'Header Phone',
+		'id'            => 'header_phone',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+register_sidebar( array(
+		'name'          => 'Contact Bottom',
+		'id'            => 'contact_bottom',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
