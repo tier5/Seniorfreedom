@@ -1,6 +1,6 @@
 <?php
 /**
- * Senior functions and definitions
+ * twentyfifteen functions and definitions
  *
  * Set up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
@@ -57,9 +57,9 @@ function twentyfifteen_setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/twentyfifteen
 	 * If you're building a theme based on twentyfifteen, use a find and replace
-	 * to change 'twentyfifteen' to the name of your theme in all the template files
+	 * to change 'senior' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'twentyfifteen' );
+	load_theme_textdomain( 'senior' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -82,8 +82,8 @@ function twentyfifteen_setup() {
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu',      'twentyfifteen' ),
-		'social'  => __( 'Social Links Menu', 'twentyfifteen' ),
+		'primary' => __( 'Primary Menu',      'senior' ),
+		'social'  => __( 'Social Links Menu', 'senior' ),
 	) );
 
 	/*
@@ -157,9 +157,9 @@ add_action( 'after_setup_theme', 'twentyfifteen_setup' );
  */
 function twentyfifteen_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Widget Area', 'twentyfifteen' ),
+		'name'          => __( 'Widget Area', 'senior' ),
 		'id'            => 'sidebar-1',
-		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'senior' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -185,7 +185,7 @@ function twentyfifteen_fonts_url() {
 	 * Translators: If there are characters in your language that are not supported
 	 * by Noto Sans, translate this to 'off'. Do not translate into your own language.
 	 */
-	if ( 'off' !== _x( 'on', 'Noto Sans font: on or off', 'twentyfifteen' ) ) {
+	if ( 'off' !== _x( 'on', 'Noto Sans font: on or off', 'senior' ) ) {
 		$fonts[] = 'Noto Sans:400italic,700italic,400,700';
 	}
 
@@ -193,7 +193,7 @@ function twentyfifteen_fonts_url() {
 	 * Translators: If there are characters in your language that are not supported
 	 * by Noto Serif, translate this to 'off'. Do not translate into your own language.
 	 */
-	if ( 'off' !== _x( 'on', 'Noto Serif font: on or off', 'twentyfifteen' ) ) {
+	if ( 'off' !== _x( 'on', 'Noto Serif font: on or off', 'senior' ) ) {
 		$fonts[] = 'Noto Serif:400italic,700italic,400,700';
 	}
 
@@ -201,7 +201,7 @@ function twentyfifteen_fonts_url() {
 	 * Translators: If there are characters in your language that are not supported
 	 * by Inconsolata, translate this to 'off'. Do not translate into your own language.
 	 */
-	if ( 'off' !== _x( 'on', 'Inconsolata font: on or off', 'twentyfifteen' ) ) {
+	if ( 'off' !== _x( 'on', 'Inconsolata font: on or off', 'senior' ) ) {
 		$fonts[] = 'Inconsolata:400,700';
 	}
 
@@ -209,7 +209,7 @@ function twentyfifteen_fonts_url() {
 	 * Translators: To add an additional character subset specific to your language,
 	 * translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language.
 	 */
-	$subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'twentyfifteen' );
+	$subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'senior' );
 
 	if ( 'cyrillic' == $subset ) {
 		$subsets .= ',cyrillic,cyrillic-ext';
@@ -279,8 +279,8 @@ function twentyfifteen_scripts() {
 
 	wp_enqueue_script( 'twentyfifteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150330', true );
 	wp_localize_script( 'twentyfifteen-script', 'screenReaderText', array(
-		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'twentyfifteen' ) . '</span>',
-		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'twentyfifteen' ) . '</span>',
+		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'senior' ) . '</span>',
+		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'senior' ) . '</span>',
 	) );
 }
 add_action( 'wp_enqueue_scripts', 'twentyfifteen_scripts' );
@@ -483,3 +483,59 @@ register_sidebar( array(
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+// Register Custom Home Section
+function custom_home_section_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Home Sections', 'Home Section General Name', 'senior' ),
+		'singular_name'         => _x( 'Home Section', 'Home Section Singular Name', 'senior' ),
+		'menu_name'             => __( 'Home Sections', 'senior' ),
+		'name_admin_bar'        => __( 'Home Section', 'senior' ),
+		'archives'              => __( 'Item Archives', 'senior' ),
+		'attributes'            => __( 'Item Attributes', 'senior' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'senior' ),
+		'all_items'             => __( 'All Items', 'senior' ),
+		'add_new_item'          => __( 'Add New Item', 'senior' ),
+		'add_new'               => __( 'Add New', 'senior' ),
+		'new_item'              => __( 'New Item', 'senior' ),
+		'edit_item'             => __( 'Edit Item', 'senior' ),
+		'update_item'           => __( 'Update Item', 'senior' ),
+		'view_item'             => __( 'View Item', 'senior' ),
+		'view_items'            => __( 'View Items', 'senior' ),
+		'search_items'          => __( 'Search Item', 'senior' ),
+		'not_found'             => __( 'Not found', 'senior' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'senior' ),
+		'featured_image'        => __( 'Featured Image', 'senior' ),
+		'set_featured_image'    => __( 'Set featured image', 'senior' ),
+		'remove_featured_image' => __( 'Remove featured image', 'senior' ),
+		'use_featured_image'    => __( 'Use as featured image', 'senior' ),
+		'insert_into_item'      => __( 'Insert into item', 'senior' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'senior' ),
+		'items_list'            => __( 'Items list', 'senior' ),
+		'items_list_navigation' => __( 'Items list navigation', 'senior' ),
+		'filter_items_list'     => __( 'Filter items list', 'senior' ),
+	);
+	$args = array(
+		'label'                 => __( 'Home Section', 'senior' ),
+		'description'           => __( 'Home Section Description', 'senior' ),
+		'labels'                => $labels,
+		'supports'              => array( ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,		
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+	);
+	register_post_type( 'home_section', $args );
+
+}
+add_action( 'init', 'custom_home_section_type', 0 );

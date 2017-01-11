@@ -33,6 +33,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
+<<<<<<< HEAD
   <?php
    if(is_front_page()){
     $addClass = 'homepage_header';
