@@ -6,7 +6,7 @@ get_header();
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 $blog_args = array(
    'post_type' => 'post',
-   'posts_per_page' => 4,
+   'posts_per_page' => 3,
    'post_status' => 'publish',
    'paged' => $paged
    );

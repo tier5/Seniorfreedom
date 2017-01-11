@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
@@ -33,7 +33,15 @@
     <?php wp_head(); ?>
   </head>
   <body>
-  <header class="main" id="siteheader">
+  <?php
+   if(is_front_page()){
+    $addClass = 'homepage_header';
+  }else{
+  $addClass = '';
+  }
+    
+  ?>
+  <header class="main <?php echo $addClass;?>" id="siteheader">
       <div class="container">
           <div class="row">
               <div class="col-md-9">
@@ -55,9 +63,9 @@
 </nav> -->
 <div class="logo">
     <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
-	$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-	?>
-	 <a href="<?php echo get_home_url(); ?>"><img src="<?php echo $image[0];?>" alt="img"></a>
+  $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+  ?>
+   <a href="<?php echo get_home_url(); ?>"><img src="<?php echo $image[0];?>" alt="img"></a>
     </div>
   <div class="full-menu">  
   <a href="#menu" class="menu-link active"><span></span> Menu</a>
@@ -84,10 +92,10 @@ wp_nav_menu( $params );
               </div>
               <div class="col-md-3 header-info">
                  <?php if ( is_active_sidebar( 'header_phone' ) ) : ?>
-			<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-				<?php dynamic_sidebar( 'header_phone' ); ?>
-			</div><!-- #primary-sidebar -->
-		<?php endif; ?>
+      <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+        <?php dynamic_sidebar( 'header_phone' ); ?>
+      </div><!-- #primary-sidebar -->
+    <?php endif; ?>
               </div>  
           </div>  
       </div>
