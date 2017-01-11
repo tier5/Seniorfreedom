@@ -55,57 +55,8 @@ get_header();
 			<div class="col-md-8">
 				<h2>Contact Us To Learn More About Our <br>
 				Reverse Mortgages For You Or A Loved One</h2>
-				<form>
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="form-group">
-								<input type="text" placeholder="Your First Name" class="form-control">
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="form-group">
-								<input type="text" placeholder="Your Last Name" class="form-control">
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="form-group">
-								<input type="email" placeholder="Your Email" class="form-control">
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="form-group">
-								<input type="text" placeholder="Your Phone Number" class="form-control">
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="form-group select">
-								<select class="form-control">
-									<option>Select Your State</option>
-									<option>LoremIpsum</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="form-group">
-								<input type="text" placeholder="Your City" class="form-control">
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="form-group">
-								<textarea rows="4"  placeholder="Your message about our reverse mortgages" class="form-control"></textarea>
-							</div>
-						</div>
-					</div>
-					<div class="form-group submit-btn">
-						<div>
-							<input type="submit" value="Send Message">
-						</div>
-					</div>
-				</form>
+				<?php echo do_shortcode('[contact-form-7 id="66" title="Home Contact Form"]');?>
+				
 			</div>
 			<div class="col-md-2"></div>
 		</div>

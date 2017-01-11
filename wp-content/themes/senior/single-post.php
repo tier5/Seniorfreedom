@@ -18,9 +18,11 @@ get_header(); ?>
 				<?php while(have_posts()):the_post();?>
 				<div class="eachblog">
 					<h3><?php echo get_the_title();?></h3>
+
 					<span><?php echo get_the_date('F d, Y');?></span>
-					<p><?php echo get_the_content();?></p>
 					<div class="social-share"><?php echo do_shortcode('[wp_social_sharing show_icons="1"]');?></div>
+					<p><?php echo get_the_content();?></p>
+					
 				</div>
 				<?php endwhile;?>
 			</div>
