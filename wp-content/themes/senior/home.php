@@ -4,6 +4,17 @@
 */
 get_header();
 ?>
+<div class="pop"><a href="#contact_form_pop" class="fancybox-inline">Contact Us</a></div>
+
+
+<a href="#contact_form_pop" class="fancybox-inline">Contact Us</a>
+
+<div style="display:none" class="fancybox-hidden">
+    <div id="contact_form_pop" class="hentry" style="width:500px;max-width:100%;">
+    	<h2>Contact Us</h2>
+        <?php echo do_shortcode('[contact-form-7 id="54" title="contact 3"]');?>
+    </div>
+</div>
 <!-- Main Content Start -->
 <div class="banner">
 	<div class="container">
