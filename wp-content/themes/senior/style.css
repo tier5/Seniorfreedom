@@ -111,7 +111,7 @@ z-index: 7777; width: 100%; height: 100%; left: 0; right: 0; top: 0;
 .contact-page h3{color: #fff; font-size: 23px; margin: 0 0 15px; padding: 0;}
 .contact-page .form-control{border-radius: 0; color: #000;  font-size: 16px; height: auto;}
 .less-pad{padding: 0 5px; }
-.contact-page input[type="submit"]{background: #A21D21; width: 360px;
+.contact-page input[type="submit"]{background: #a30202; font-size: 16px; width: 360px;
 margin: 0 auto; padding: 7px 0; border:none; color: #fff;
 }
 .contact-page input[type="submit"]:hover{
@@ -128,7 +128,9 @@ margin: 0 auto; padding: 7px 0; border:none; color: #fff;
 
 /*=================Home Page start=====================*/
 
-
+nav ul li {
+    padding: 10px 8px;
+}
 .pop {
     position: fixed;
     right: -62px;
@@ -153,18 +155,14 @@ margin: 0 auto; padding: 7px 0; border:none; color: #fff;
 }
 
 #contact_form_pop {
-    display: inline-block;
-    width: 100%;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
 }
 
 #contact_form_pop h2{
-    margin-bottom: 20px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
-
-
 
 #contact_form_pop .form-control{
     border-radius: 0;
@@ -172,26 +170,27 @@ margin: 0 auto; padding: 7px 0; border:none; color: #fff;
 }
 
 #contact_form_pop textarea.form-control{
-    border-radius: 0;
     height: auto;
 }
 
-
-
-#contact_form_pop input[type="submit"]{
+#contact_form_pop input[type='submit']{
     font-family: 'OpenSans-Semibold';
     background: #a30202;
-    color: #fff;
     border: 1px solid #a30202;
-    text-transform: uppercase;
     padding: 10px 20px;
-    font-size: 17px;
-    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
-#contact_form_pop input[type="submit"]:hover{
-    color: #000;
-    transition: 0.5s;
+header .menu li a {
+    font-size: 14px;
+    letter-spacing: 0;
+    font-family: 'OpenSans-Regular';
+}
+
+header .menu li a:hover {
+    text-shadow: 1px 1px 1px #000;
 }
 
 
@@ -394,7 +393,7 @@ header.homepage_header {
 }
 
 .message .submit-btn input {
-    padding: 10px 25px;
+    padding: 10px 50px;
     font-size: 28px;
 }
 
@@ -409,8 +408,16 @@ header.homepage_header {
     padding-right: 10px;
 }
 
+.fourth-section .contact-btn{
+    position: relative;
+}
+
 .fourth-section .contact-btn a {
-    padding: 5px 138px;
+    /*padding: 5px 138px;*/
+    padding: 5px 180px;
+    position: absolute;
+    background-size: 100%;
+    right: -12px;
 }
 
 .fourth-section .contact-btn a:before {
@@ -539,7 +546,7 @@ a.readmore:hover{
     white-space: nowrap;
 }
 
-.submit-btn div:after{
+/*.submit-btn div:after{
     content: "";
     position: absolute;
     display: block;
@@ -573,11 +580,12 @@ a.readmore:hover{
     -moz-transform: skewX(-30deg);
     transform: skewX(-30deg);
     border-left: none;
-}
+}*/
 
 .submit-btn input{
     padding: 10px 40px;
-    background: #a30202;
+    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_button.png') center no-repeat;
+    background-size: 100% 100%;
     border: none;
     font-size: 18px;
 }
@@ -585,8 +593,11 @@ a.readmore:hover{
 
 
 /*pagination css*/
-.pagination-div a{margin-left: 5px; display: inline-block;
-    background: #034a84;
+.pagination-div a{
+    margin-left: 5px; 
+    display: inline-block;
+    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_blue_button.png') center no-repeat;
+    background-size: 100% 100%;
     font-size: 20px;
     margin-left: 5px;
     padding: 8px 18px;
@@ -594,9 +605,11 @@ a.readmore:hover{
 }
 
 .pagination-div .current{
-    margin-left: 5px; display: inline-block;
-    background: #034a84;
-    font-size: 20px;
+    display: inline-block;
+    /*background: #034a84;*/
+    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_blue_button.png') center no-repeat;
+    background-size: 100% 100%;
+    font-size: 24px;
     margin-left: 5px;
     padding: 8px 18px;
     color: #fff;
@@ -736,17 +749,18 @@ content: "";
 }
 
 .contact-btn a{
-    background: #a30202;
+    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_button.png') center no-repeat;
+    background-size: 100% 100%;
     display: inline-block;
     color: #fff;
     font-size: 30px;
     position: relative;
     white-space: nowrap;
-    padding: 5px 40px;
+    padding: 5px 60px;
     transition: 0.5s;
 }
 
-.contact-btn a:after{
+/*.contact-btn a:after{
     content: "";
     position: absolute;
     display: block;
@@ -782,7 +796,7 @@ content: "";
     -moz-transform: skewX(-30deg);
     transform: skewX(-30deg);
     border-left: none;
-}
+}*/
 
 .contact-btn a:hover{
     color: #000;
@@ -931,10 +945,35 @@ header{background: #104B85}
 .header-info p{color: #fff;}
 header h2{color: #fff;}
 .logo{margin: 10px auto;}
+}
 
+@media screen and (max-width:800px) {
+    .logo{
+        float: none;
+    }
+    nav.active li {
+        display: block;
+    }
+
+    .menu li li a {
+        font-size: 12px !important;
+        border: none !important;
+    }
+
+    .menu-link:hover span {
+        border-color: #fff !important;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
+    .fourth-section .contact-btn a {
+        /*padding: 5px 95px;*/
+        padding: 5px 135px;
+        right: -10px;
+    }
+    header .menu li a {
+        font-size: 13px;
+    }
     .footer-middle .footer-menu ul li {
         margin-right: 38px;
     }
@@ -947,6 +986,11 @@ header h2{color: #fff;}
 
     .contact-ribbon h1 {
         font-size: 27px;
+    }
+
+    .banner ul li {
+        font-size: 18px;
+        padding: 10px 80px;
     }
 }
 
@@ -967,6 +1011,10 @@ header h2{color: #fff;}
         background: rgba(163, 2, 2, 0.5);
         padding: 20px;
     }
+
+    .banner-txt {
+        text-shadow: 1px 1px 1px #333;
+    }
 }
 
 
@@ -985,7 +1033,14 @@ header h2{color: #fff;}
     }
 
     .fourth-section .contact-btn a {
-        padding: 5px 50px;
+        /*padding: 5px 50px;*/
+        padding: 5px 100px;
+        right: 0;
+        font-size: 20px;
+    }
+
+    .pagination-div a {
+        padding: 8px 10px;
     }
     
 }
@@ -999,15 +1054,6 @@ header h2{color: #fff;}
 
 
 @media screen and (max-width: 767px){
-
-    .pop {
-        right: -45px;
-    }
-
-    .pop a {
-        font-size: 14px;
-    }
-
     h2 {
         font-size: 20px;
     }
@@ -1025,7 +1071,11 @@ header h2{color: #fff;}
         padding: 5px;
     }
 
-    .contact-us .submit-btn div:before, .contact-us .submit-btn div:after, .contact-btn a:before, .contact-btn a:after, .pagination-div li:first-child:after, .pagination-div li:last-child:before, .home-contact-ribbon .contact-ribbon:before, .home-contact-ribbon .contact-ribbon:after, .submit-btn div:before, .submit-btn div:after{
+    /*.contact-us .submit-btn div:before, .contact-us .submit-btn div:after, .contact-btn a:before, .contact-btn a:after, .pagination-div li:first-child:after, .pagination-div li:last-child:before, .home-contact-ribbon .contact-ribbon:before, .home-contact-ribbon .contact-ribbon:after, .submit-btn div:before, .submit-btn div:after, .pagination-div a.prev:after,.pagination-div a.next:after{
+        display: none;
+    }*/
+
+    .home-contact-ribbon .contact-ribbon:before, .home-contact-ribbon .contact-ribbon:after{
         display: none;
     }
 
@@ -1084,8 +1134,8 @@ header h2{color: #fff;}
     }
 
     .banner ul li {
-        font-size: 15px;
-        padding: 10px 0 10px 95px;
+        font-size: 14px;
+        padding: 10px 0 10px 80px;
         height: auto;
     }
 
@@ -1144,9 +1194,14 @@ header h2{color: #fff;}
     }
 
     .fourth-section .contact-btn a {
+        /*padding: 10px;
+        width: 100%;
+        text-align: center;*/
         padding: 10px;
         width: 100%;
         text-align: center;
+        position: relative;
+        right: 0;
     }
 
     .contact-ribbon h2 {
@@ -1165,9 +1220,9 @@ header h2{color: #fff;}
         text-align: center;
     }
 
-    .footer-menu ul li a:before, .footer-menu ul li a:after{
+    /*.footer-menu ul li a:before, .footer-menu ul li a:after{
         display: none;
-    }
+    }*/
 
     .footer-middle .footer-menu ul li {
         margin-right: 0;
@@ -1177,21 +1232,99 @@ header h2{color: #fff;}
         font-size: 14px;
         width: 100%;
     }
+
+    .pop {
+        right: -45px;
+    }
+
+    .pop a {
+        font-size: 14px;
+    }
     /********/
+    .contact-page input[type="submit"]{
+        width: 100%;
+    }
+
+    .contact-page h3 {
+        font-size: 17px;
+    }
 
 }
 
-@media screen and (max-width: 720px){
+@media screen and (min-width: 481px) and (max-width: 767px){
+        .pagination-div a {
+            font-size: 10px;
+            padding: 8px 10px;
+        }
 
-
-
+        .pagination-div a.prev, .pagination-div a.next {
+            padding: 10px 26px;
+            font-size: 10px;
+        }
 }
+
+@media screen and (max-width: 480px){
+    .header-info {
+        text-align: left;
+        display: inline-block;
+    }
+
+    a.menu-link {
+        right: 5px;
+        top: auto;
+        bottom: -30px;
+        font-size: 10px;
+    }
+
+    .header-info p {
+        font-size: 10px; 
+    }
+
+    header h2 {
+        font-size: 14px;
+    }
+
+    .logo{width: 125px;}
+
+    .menu.active {
+        width: auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 80px;
+        background: #fff;
+        z-index: 99999;
+        border-bottom: 1px solid #999;
+        box-shadow: 5px 0 5px 0 #000;
+
+    }
+
+    .pagination-div a.next {
+        display: block;
+        margin: 20px auto 0;
+        width: 50%;
+    }
+
+    .pagination-div a.prev {
+        display: block;
+        margin: 0 auto 20px;
+        width: 50%;
+    }
+
+    .banner ul li {
+        font-size: 14px;
+        padding: 10px 0 10px 50px;
+        height: auto;
+        background-size: 10%;
+    }
+}
+
 div.wpcf7 .ajax-loader {
     display: inline !important;
 }
 span.ajax-loader {
     display: inline !important;
 }
-.footer-menu ul li a:hover{background-color: #ac1e1e;}
-.footer-menu ul li a:before :hover{background-color: #ac1e1e;}
-.footer-menu ul li a:after :hover{background-color: #ac1e1e;}
+.footer-menu ul li a:hover{/*background-color: #ac1e1e;*/ color: #000;}
+/*.footer-menu ul li a:before :hover{background-color: #ac1e1e;}
+.footer-menu ul li a:after :hover{background-color: #ac1e1e;}*/
