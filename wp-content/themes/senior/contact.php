@@ -8,11 +8,11 @@ get_header();
          <div class="container">
             <div class="row">
                <div class="col-md-12 col-sm-12 align-center contact-page">
-                  <div class="contact-logo">
+                  <!--<div class="contact-logo">
              <img src="<?php echo get_template_directory_uri(); ?>/images/sfi.png" alt="SFI">
-                  </div> 
-                  <h3>Contact Us To Find Out How We Can Assist You With<br> A Reverse Mortgage</h3> 
-               <?php echo do_shortcode('[contact-form-7 id="41" title="Contact form 2"]');?>
+                  </div>--> 
+                  <h1>Contact Us </h1><h2>Fill out the form below find out how we can assist you with a reverse mortgage</h2> 
+               <?php echo do_shortcode('[contact-form-7 id="66" title="Contact form 2"]');?>
                </div>
             </div>
          </div>

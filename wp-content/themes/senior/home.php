@@ -9,7 +9,7 @@ get_header();
 <div style="display:none" class="fancybox-hidden">
     <div id="contact_form_pop" class="hentry" style="width:500px;max-width:100%;">
     	<h2>Contact Us</h2>
-        <?php echo do_shortcode('[contact-form-7 id="54" title="contact 3"]');?>
+        <?php echo do_shortcode('[contact-form-7 id="74" title="contact 3"]');?>
     </div>
 </div>
 <!-- Main Content Start -->
@@ -75,7 +75,7 @@ get_header();
 			<div class="col-md-8">
 				<h2>Contact Us To Learn More About Our <br>
 				Reverse Mortgages For You Or A Loved One</h2>
-				<?php echo do_shortcode('[contact-form-7 id="66" title="Home Contact Form"]');?>
+				<?php echo do_shortcode('[contact-form-7 id="68" title="Home Contact Form"]');?>
 				
 			</div>
 			<div class="col-md-2"></div>

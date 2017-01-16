@@ -52,6 +52,10 @@ ul{
     margin: 0;
 }
 
+h1{
+    font-family:'OpenSans-Semibold';
+}
+
 h2{
     color: #a30202;
     font-family:'OpenSans-Semibold';
@@ -108,7 +112,8 @@ z-index: 7777; width: 100%; height: 100%; left: 0; right: 0; top: 0;
  }
 .align-center{text-align: center; z-index: 9999;}
 .contact-logo{width: 200px; margin: 0 auto; padding: 5px 0;}
-.contact-page h3{color: #fff; font-size: 23px; margin: 0 0 15px; padding: 0;}
+.contact-page h1{ color: #fff;margin: 20px 0 10px;}
+.contact-page h2{color: #fff; font-size: 23px; margin: 0 0 15px; padding: 0; text-transform: capitalize;}
 .contact-page .form-control{border-radius: 0; color: #000;  font-size: 16px; height: auto;}
 .less-pad{padding: 0 5px; }
 .contact-page input[type="submit"]{background: #a30202; font-size: 16px; width: 360px;
@@ -122,7 +127,7 @@ margin: 0 auto; padding: 7px 0; border:none; color: #fff;
 .contact-info h3{color: #A30202; padding-bottom: 7px;}
 .contact-info p{margin: 0; color: #333;}
 .logo{float: left;}
-.logo{ width: 190px;/*width: 125px;*/ padding-top: 10px;}
+.logo{ width: 190px;padding-top: 10px;}
 .logo img{max-width: 100%;}
 .full-menu{float: left; margin-top: 10px;}
 
@@ -244,11 +249,11 @@ header.homepage_header {
     font-size: 24px;
     text-align: left;
     padding: 10px 85px;
-    height: 60px;
+    height: 70px;
 }
 
 .banner .contact-btn{
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 
@@ -320,11 +325,8 @@ header.homepage_header {
 }
 
 .third-section .banner-txt {
-    /*background: url(../images/bg.png) no-repeat left;
-    background-size: 100% 100%;*/
     text-align: left;
     padding: 40px 0;
-    /*padding: 40px 20px 50px 180px;*/
 }
 
 .third-section .banner-txt p{
@@ -418,7 +420,6 @@ header.homepage_header {
 }
 
 .fourth-section .contact-btn a {
-    /*padding: 5px 138px;*/
     padding: 5px 180px;
     position: absolute;
     background-size: 100%;
@@ -433,6 +434,31 @@ header.homepage_header {
     margin: auto;
 }
 /*=================Home Page end=====================*/
+
+/*=================Reverse Mortgage===================*/
+
+.mortgage_div {
+    text-align: center;
+}
+
+.mortgage_div h2{
+    color: #034a84;
+    text-align: center;
+}
+
+.mortgage_div iframe{
+    border: none;
+    width: 50%;
+    background: #034a84;
+    padding: 40px;
+    width: 50%;
+}
+
+body.calculator{
+    background: #034a84;
+}
+
+/*************************************************/
 
 .eachblog{
     margin-top: 20px;
@@ -551,41 +577,6 @@ a.readmore:hover{
     white-space: nowrap;
 }
 
-/*.submit-btn div:after{
-    content: "";
-    position: absolute;
-    display: block;
-    background: #a30202;
-    width: 30px;
-    height: 100%;
-    top: 0;
-    -webkit-transform-origin: bottom left;
-    -moz-transform-origin: bottom left;
-    transform-origin: bottom left;
-    right: 0;
-    -webkit-transform: skewX(-30deg);
-    -moz-transform: skewX(-30deg);
-    transform: skewX(-30deg);
-    border-left: none;
-}
-
-.submit-btn div:before {
-    content: "";
-    position: absolute;
-    display: block;
-    background: #a30202;
-    width: 35px;
-    height: 100%;
-    top: 0;
-    -webkit-transform-origin: bottom left;
-    -moz-transform-origin: bottom left;
-    transform-origin: bottom left;
-    left: -34px;
-    -webkit-transform: skewX(-30deg);
-    -moz-transform: skewX(-30deg);
-    transform: skewX(-30deg);
-    border-left: none;
-}*/
 
 .submit-btn input{
     padding: 10px 40px;
@@ -599,70 +590,36 @@ a.readmore:hover{
 
 /*pagination css*/
 .pagination-div a{
-    margin-left: 5px; 
     display: inline-block;
-    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_blue_button.png') center no-repeat;
+    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_blue_button_2.png') center no-repeat;
     background-size: 100% 100%;
     font-size: 20px;
-    margin-left: 5px;
-    padding: 8px 18px;
+    padding: 8px 40px;
     color: #fff;
+    margin-left: -20px;
 }
 
 .pagination-div .current{
     display: inline-block;
-    /*background: #034a84;*/
-    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_blue_button.png') center no-repeat;
+    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_blue_button_2.png') center no-repeat;
     background-size: 100% 100%;
-    font-size: 24px;
-    margin-left: 5px;
-    padding: 8px 18px;
+    font-size: 20px;
+    padding: 8px 40px;
     color: #fff;
+    margin-left: -20px;
 }
-.pagination-div a.prev{padding: 10px 30px; background: #a30202;
-font-size: 18px; position: relative; color: #fff; margin-right: 26px}
-.pagination-div a.prev:after{
-    content: "";
-    position: absolute;
-    display: block;
-    background: #a30202;
-    width: 30px;
-    height: 100%;
-    top: 0;
-    -webkit-transform-origin: bottom left;
-    -moz-transform-origin: bottom left;
-    transform-origin: bottom left;
-    right: 0;
-    -webkit-transform: skewX(-30deg);
-    -moz-transform: skewX(-30deg);
-    transform: skewX(-30deg);
-    border-left: none;
-
+.pagination-div a.prev,.pagination-div a.next{
+    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_button_2_updated.png') center no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 55px; 
+    font-size: 18px; 
+    position: relative; 
+    color: #fff; 
+    margin-left: -20px;
 }
-
 
 .pagination-div{text-align: center;}
-.pagination-div a.next{padding: 10px 30px; background: #a30202;
-font-size: 18px; position: relative; color: #fff; margin-left: 26px;}
 
-.pagination-div a.next:after{
-content: "";
-    position: absolute;
-    display: block;
-    background: #a30202;
-    width: 35px;
-    height: 100%;
-    top: 0;
-    -webkit-transform-origin: bottom left;
-    -moz-transform-origin: bottom left;
-    transform-origin: bottom left;
-    left: 0;
-    -webkit-transform: skewX(-30deg);
-    -moz-transform: skewX(-30deg);
-    transform: skewX(30deg);
-    border-left: none;
-
-}
 /*End of pagination css*/
 
 .pagination-div{
@@ -765,43 +722,6 @@ content: "";
     transition: 0.5s;
 }
 
-/*.contact-btn a:after{
-    content: "";
-    position: absolute;
-    display: block;
-    border: 1px solid #a30202;
-    background: #a30202;
-    width: 30px;
-    height: 100%;
-    top: 0;
-    -webkit-transform-origin: bottom left;
-    -moz-transform-origin: bottom left;
-    transform-origin: bottom left;
-    right: 0;
-    -webkit-transform: skewX(-30deg);
-    -moz-transform: skewX(-30deg);
-    transform: skewX(-30deg);
-    border-left: none;
-}
-
-.contact-btn a:before {
-    content: "";
-    position: absolute;
-    display: block;
-    border: 1px solid #a30202;
-    background: #a30202;
-    width: 35px;
-    height: 100%;
-    top: 0;
-    -webkit-transform-origin: bottom left;
-    -moz-transform-origin: bottom left;
-    transform-origin: bottom left;
-    left: -34px;
-    -webkit-transform: skewX(-30deg);
-    -moz-transform: skewX(-30deg);
-    transform: skewX(-30deg);
-    border-left: none;
-}*/
 
 .contact-btn a:hover{
     color: #000;
@@ -970,9 +890,15 @@ header h2{color: #fff;}
     }
 }
 
+@media screen and (max-width: 1199px){
+    .banner {
+        background: url(images/img1.jpg) center no-repeat;
+        background-size: cover;
+    }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1199px){
     .fourth-section .contact-btn a {
-        /*padding: 5px 95px;*/
         padding: 5px 135px;
         right: -10px;
     }
@@ -990,7 +916,7 @@ header h2{color: #fff;}
     }
 
     .contact-ribbon h1 {
-        font-size: 27px;
+        font-size: 25px;
     }
 
     .banner ul li {
@@ -1030,7 +956,7 @@ header h2{color: #fff;}
     }
 
     .contact-ribbon h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .contact-ribbon h2 {
@@ -1038,14 +964,15 @@ header h2{color: #fff;}
     }
 
     .fourth-section .contact-btn a {
-        /*padding: 5px 50px;*/
         padding: 5px 100px;
         right: 0;
         font-size: 20px;
     }
 
-    .pagination-div a {
-        padding: 8px 10px;
+    .pagination-div a,.pagination-div .current, .pagination-div a.prev,.pagination-div a.next {
+        padding: 6px 20px;
+        font-size: 15px;
+        margin-left: -12px;
     }
     
 }
@@ -1075,10 +1002,6 @@ header h2{color: #fff;}
         font-size: 12px;
         padding: 5px;
     }
-
-    /*.contact-us .submit-btn div:before, .contact-us .submit-btn div:after, .contact-btn a:before, .contact-btn a:after, .pagination-div li:first-child:after, .pagination-div li:last-child:before, .home-contact-ribbon .contact-ribbon:before, .home-contact-ribbon .contact-ribbon:after, .submit-btn div:before, .submit-btn div:after, .pagination-div a.prev:after,.pagination-div a.next:after{
-        display: none;
-    }*/
 
     .home-contact-ribbon .contact-ribbon:before, .home-contact-ribbon .contact-ribbon:after{
         display: none;
@@ -1138,12 +1061,6 @@ header h2{color: #fff;}
         padding: 20px;
     }
 
-    .banner ul li {
-        font-size: 14px;
-        padding: 10px 0 10px 80px;
-        height: auto;
-    }
-
     .banner-txt {
         padding: 20px 0;
     }
@@ -1199,9 +1116,6 @@ header h2{color: #fff;}
     }
 
     .fourth-section .contact-btn a {
-        /*padding: 10px;
-        width: 100%;
-        text-align: center;*/
         padding: 10px;
         width: 100%;
         text-align: center;
@@ -1215,7 +1129,6 @@ header h2{color: #fff;}
 
     .contact-page .form-control{margin-bottom: 10px; }
 
-    /********/
     .footer-middle ul li img {
         width: auto;
         margin: auto;
@@ -1224,10 +1137,6 @@ header h2{color: #fff;}
     .footer-middle {
         text-align: center;
     }
-
-    /*.footer-menu ul li a:before, .footer-menu ul li a:after{
-        display: none;
-    }*/
 
     .footer-middle .footer-menu ul li {
         margin-right: 0;
@@ -1245,7 +1154,7 @@ header h2{color: #fff;}
     .pop a {
         font-size: 14px;
     }
-    /********/
+
     .contact-page input[type="submit"]{
         width: 100%;
     }
@@ -1257,15 +1166,18 @@ header h2{color: #fff;}
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px){
-        .pagination-div a {
-            font-size: 10px;
-            padding: 8px 10px;
-        }
+    .pagination-div a,.pagination-div .current, .pagination-div a.prev,.pagination-div a.next  {
+        font-size: 18px;
+        padding: 8px 30px;
+        margin-left: -15px;
+    }
 
-        .pagination-div a.prev, .pagination-div a.next {
-            padding: 10px 26px;
-            font-size: 10px;
-        }
+    .banner ul li {
+        font-size: 14px;
+        padding: 10px 0 10px 80px;
+        height: auto;
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -1304,23 +1216,24 @@ header h2{color: #fff;}
 
     }
 
-    .pagination-div a.next {
-        display: block;
-        margin: 20px auto 0;
-        width: 50%;
-    }
-
-    .pagination-div a.prev {
-        display: block;
-        margin: 0 auto 20px;
-        width: 50%;
+    .pagination-div a,.pagination-div .current, .pagination-div a.prev,.pagination-div a.next  {
+        font-size: 10px;
+        padding: 8px 30px;
+        margin-left: 0;
     }
 
     .banner ul li {
         font-size: 14px;
         padding: 10px 0 10px 50px;
         height: auto;
-        background-size: 10%;
+        background-size: 12%;
+    }
+
+    .pagination-div a,.pagination-div .current, .pagination-div a.prev,.pagination-div a.next  {
+        font-size: 10px;
+        padding: 8px 17px;
+        margin-left: -10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -1464,6 +1377,7 @@ header .menu li a {
         background: #fff;
         top: 55px;
         display: none;
+        z-index: 99999;
     }
 
     .menu-mobile ul li{
@@ -1475,8 +1389,20 @@ header .menu li a {
         padding-left: 20px;
     }
 
+    .menu-mobile ul li ul{
+        display: none;
+    }
+
+    .menu-mobile ul li ul li{
+        padding-left: 0;
+    }
+
     .menu-mobile ul li:hover{
         background: #034a84;
+    }
+
+    .menu-mobile ul li:hover ul{
+        display: block;
     }
 
     .menu-mobile ul li:hover a{
@@ -1512,6 +1438,15 @@ header .menu li a {
     .header-nav.open ul li a .bars{
         display: none;
     }
+
+    .header-nav nav li.menu-item-has-children:hover ul.sub-menu {
+        background: #034a84;
+        position: absolute;
+        z-index: 9;
+        top: 28px;
+        padding: 0 20px;
+        min-height: 50px;
+    }
 }
 
 div.wpcf7 .ajax-loader {
@@ -1520,6 +1455,22 @@ div.wpcf7 .ajax-loader {
 span.ajax-loader {
     display: inline !important;
 }
-.footer-menu ul li a:hover{/*background-color: #ac1e1e;*/ color: #000;}
-/*.footer-menu ul li a:before :hover{background-color: #ac1e1e;}
-.footer-menu ul li a:after :hover{background-color: #ac1e1e;}*/
+.footer-menu ul li a:hover{color: #000;}
+/*for calculator*/
+.calculator-sec{background: #0A4A87; border:4px solid #fff;
+padding: 20px 52px; color: #fff;
+}
+.calculator-sec h2 {
+  color: #fff;
+  font-family: "OpenSans-Semibold";
+  font-size: 27px;
+  margin-top: 0;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.red-btn{background: #A00025; border:none; border-radius: 10px; color: #fff;
+    cursor: pointer; float: right; padding: 7px 35px; font-size: 17px;}
+
+.calculator-sec .label{padding: 0 0 3px; font-size: 14px; display: inline-block;}
+.calculator-sec .form-control{border-radius: 0; height: auto; padding: 9px;}

@@ -12,14 +12,14 @@ $blog_args = array(
    );
 $blog_query = new WP_Query($blog_args);
 remove_filter ('the_content', 'wpautop');
-$id=13; 
+$id=27; 
 $post = get_post($id); 
 $content = apply_filters('the_content', $post->post_content); 
 ?><div class="container">
          <div class="row">
             <div class="col-sm-8">
                <div class="left-part">
-                  <h2><?php echo $content;?></h2>
+                  <h1><?php echo $content;?></h1>
 
                   <?php if($blog_query->have_posts()):?>
                      <?php while($blog_query->have_posts()):$blog_query->the_post();?>
@@ -71,7 +71,7 @@ $content = apply_filters('the_content', $post->post_content);
       <div class="container-fluid">
          <div class="row">
             <div class="contact-ribbon">
-               <h1>Are You Prepared to Survive Retirement?</h1>
+               <h2>Are You Prepared to Survive Retirement?</h2>
                <div class="contact-btn"><a href="#">Contact Us</a></div>
             </div>
          </div>

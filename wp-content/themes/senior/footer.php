@@ -78,9 +78,10 @@
 
 </body>
 <script type="text/javascript">
-  $(document).ready(function(){
-    $('.open-menu').click(function(e){
-      $('.menu-mobile').slideToggle("slow").parent().toggleClass('open');
+
+  jQuery(document).ready(function(){
+    jQuery('.open-menu').click(function(e){
+     jQuery('.menu-mobile').slideToggle("slow").parent().toggleClass('open');
       e.preventDefault();
     });
   });
