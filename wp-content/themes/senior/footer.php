@@ -77,4 +77,12 @@
 <?php wp_footer(); ?>
 
 </body>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.open-menu').click(function(e){
+      $('.menu-mobile').slideToggle("slow").parent().toggleClass('open');
+      e.preventDefault();
+    });
+  });
+</script>
 </html>

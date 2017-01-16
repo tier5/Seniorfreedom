@@ -131,6 +131,11 @@ margin: 0 auto; padding: 7px 0; border:none; color: #fff;
 nav ul li {
     padding: 10px 8px;
 }
+
+.tablet-header,.mobile-header{
+    display: none;
+}
+
 .pop {
     position: fixed;
     right: -62px;
@@ -204,11 +209,11 @@ header.homepage_header {
 .banner{
     display: inline-block;
     width: 100%;
-    background: url(images/img1.png) center no-repeat;
+    background: url(images/img1.jpg) no-repeat;
     background-size: cover;
     color: #fff;
     vertical-align: top;
-    padding-top: 75px;
+    padding-top: 100px;
 }
 
 .banner h1{
@@ -1316,6 +1321,196 @@ header h2{color: #fff;}
         padding: 10px 0 10px 50px;
         height: auto;
         background-size: 10%;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 991px){
+
+.header-info{
+    display: none;  
+}
+.tablet-header{
+    display: block;
+    background: #a30202;
+}
+
+.callat_head{
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 0;
+}
+
+.callat_head ul li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.callat_head ul li a{
+    display: block;
+    background: none;
+    color: #fff;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    position: relative;
+    font-size: 12px;
+    border: 1px solid #fff;
+}
+
+.callat_head ul li a i{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.callat_head .callat{
+    color: #fff;
+    font-size: 14px;
+    text-align: right;
+    font-family: 'OpenSans-Semibold';
+}
+
+.logo{
+    margin: 0;
+    padding: 10px 0;
+    width: 125px;
+}
+
+.full-menu {
+    float: left;
+    width: 80%;
+}
+
+header .menu li a {
+    font-size: 10px;
+}
+
+}
+
+@media screen and (max-width: 800px){
+    .header-info{
+        display: none;
+    }
+    .mobile-header{
+        display: block;
+    }
+
+    .social-media{
+        display: inline-block;
+        width: 100%;
+        background: #a30202;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .social-media ul li{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .social-media ul li a{
+        display: block;
+        background: none;
+        color: #fff;
+        border-radius: 50%;
+        height: 22px;
+        width: 22px;
+        position: relative;
+        font-size: 12px;
+        border: 1px solid #fff;
+    }
+
+    .social-media ul li a i{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+
+    .header-nav{
+        position: relative;
+    }
+
+    .header-nav ul li{
+        float: left;
+        width: 25%;
+        margin-right: 0;
+        text-align: center;
+    }
+    .header-nav ul li a{
+        font-size: 12px;
+        color: #fff;
+        padding: 5px 0;
+        display: block;
+        border-right: 1px solid #fff;
+    }
+
+    .header-nav ul li:last-child a{
+        border: none;
+    }
+
+    .header-nav ul li a img{
+        margin: 0 auto 5px;
+    }
+
+    .menu-mobile{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        top: 55px;
+        display: none;
+    }
+
+    .menu-mobile ul li{
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #ccc;
+        padding-left: 20px;
+    }
+
+    .menu-mobile ul li:hover{
+        background: #034a84;
+    }
+
+    .menu-mobile ul li:hover a{
+        color: #fff;
+    }
+
+    .menu-mobile ul li a{
+        border: none;
+        color: #034a84;
+        text-align: left;
+    }
+
+    .menu-mobile ul li ul{
+        display: none;
+    }
+
+    .menu-mobile ul li:hover ul{
+        display: block;
+    }
+
+    .header-nav ul li a .close-btnn{
+        display: none;
+    }
+
+    .header-nav ul li a .close-btnn{
+        display: none;
+    }
+
+    .header-nav.open ul li a .close-btnn{
+        display: block;
+    }
+
+    .header-nav.open ul li a .bars{
+        display: none;
     }
 }
 

@@ -68,7 +68,7 @@
    <a href="<?php echo get_home_url(); ?>"><img src="<?php echo $image[0];?>" alt="img"></a>
     </div>
   <div class="full-menu">  
-  <a href="#menu" class="menu-link active"><span></span> Menu</a>
+  <!--<a href="#menu" class="menu-link active"><span></span> Menu</a>-->
   <nav id="menu" class="menu">
     <!--<ul class="level-1">
       <li class="active"><a href="#">Home</a></li>
@@ -99,4 +99,71 @@ wp_nav_menu( $params );
               </div>  
           </div>  
       </div>
+      <div class="tablet-header">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="callat_head">
+          <div class="col-sm-6">
+            <div class="social-media">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="callat">Call to find out more 888-111-11111</div>
+          </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-header">
+      <div class="container-fluid">
+        <div class="row">
+        <div class="social-media">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="row">
+        <div class="header-nav">
+          <ul>
+            <li>
+              <a href="#" class="open-menu">
+                <img src="<?php echo get_template_directory_uri();?>/images/bars.png" class="img-responsive bars">
+                <img src="<?php echo get_template_directory_uri();?>/images/bars-close.png" class="img-responsive close-btnn">
+                Menu
+              </a>
+            </li>
+            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/images/phn.png" class="img-responsive">Call</a></li>
+            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/images/location.png" class="img-responsive">Location</a></li>
+            <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/images/msg.png" class="img-responsive">Contact</a></li>
+          </ul>
+          <nav class="menu-mobile">
+                      <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Our Programs</a></li>
+                        <li><a href="#">Step By Step</a></li>
+                        <li>
+                          <a href="#">About</a>
+                          <ul>
+                            <li><a href="#">Reverse Mortgage Calculator</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                      </ul>
+                    </nav>
+        </div>
+      </div>
+      </div>
+    </div>
   </header> 

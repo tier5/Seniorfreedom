@@ -419,7 +419,7 @@ add_theme_support( 'custom-logo', array(
 	'flex-width'  => true,
 	'header-text' => array( 'site-title', 'site-description' ),
 ) );
-add_action( 'after_setup_theme', 'theme_prefix_setup' );
+//add_action( 'after_setup_theme', 'theme_prefix_setup' );
 function theme_prefix_the_custom_logo() {
 	
 	if ( function_exists( 'the_custom_logo' ) ) {
