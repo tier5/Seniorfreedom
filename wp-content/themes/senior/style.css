@@ -214,11 +214,12 @@ header.homepage_header {
 .banner{
     display: inline-block;
     width: 100%;
-    background: url(images/img1.jpg) no-repeat;
+    /*background: url(images/img1.jpg) no-repeat;*/
+    background: url("images/banner_3.jpg") no-repeat;
     background-size: cover;
     color: #fff;
     vertical-align: top;
-    padding-top: 100px;
+    padding-top: 88px;
 }
 
 .banner h1{
@@ -235,6 +236,7 @@ header.homepage_header {
 .banner-txt{
     text-align: center;
     padding: 20px 0 95px;
+    background: rgba(16, 67, 117, 0.5);
 }
 
 .banner ul{
@@ -244,11 +246,15 @@ header.homepage_header {
     padding-top: 20px;
 }
 
-.banner ul li{
+.banner-content{
+    float: right;
+}
+
+.banner ul li {
     background: url(images/tick.png) left no-repeat;
     font-size: 24px;
     text-align: left;
-    padding: 10px 85px;
+    padding: 10px 20px 10px 85px;
     height: 70px;
 }
 
@@ -326,7 +332,8 @@ header.homepage_header {
 
 .third-section .banner-txt {
     text-align: left;
-    padding: 40px 0;
+    padding: 40px 0 20px 35px;
+    background: none;
 }
 
 .third-section .banner-txt p{
@@ -580,7 +587,7 @@ a.readmore:hover{
 
 .submit-btn input{
     padding: 10px 40px;
-    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_button.png') center no-repeat;
+    background: url('images/slanted_button.png') center no-repeat;
     background-size: 100% 100%;
     border: none;
     font-size: 18px;
@@ -591,7 +598,7 @@ a.readmore:hover{
 /*pagination css*/
 .pagination-div a{
     display: inline-block;
-    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_blue_button_2.png') center no-repeat;
+    background: url('images/slanted_blue_button_updated.png') center no-repeat;
     background-size: 100% 100%;
     font-size: 20px;
     padding: 8px 40px;
@@ -601,7 +608,7 @@ a.readmore:hover{
 
 .pagination-div .current{
     display: inline-block;
-    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_blue_button_2.png') center no-repeat;
+    background: url('images/slanted_blue_button_updated_light.png') center no-repeat;
     background-size: 100% 100%;
     font-size: 20px;
     padding: 8px 40px;
@@ -609,7 +616,7 @@ a.readmore:hover{
     margin-left: -20px;
 }
 .pagination-div a.prev,.pagination-div a.next{
-    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_button_2_updated.png') center no-repeat;
+    background: url('images/red_button_updated.png') center no-repeat;
     background-size: 100% 100%;
     padding: 10px 55px; 
     font-size: 18px; 
@@ -711,7 +718,7 @@ a.readmore:hover{
 }
 
 .contact-btn a{
-    background: url('http://159.203.95.124/wp-content/uploads/2017/01/slanted_button.png') center no-repeat;
+    background: url('images/slanted_button.png') center no-repeat;
     background-size: 100% 100%;
     display: inline-block;
     color: #fff;
@@ -892,7 +899,7 @@ header h2{color: #fff;}
 
 @media screen and (max-width: 1199px){
     .banner {
-        background: url(images/img1.jpg) center no-repeat;
+        background: url(images/banner_3.jpg) no-repeat center;
         background-size: cover;
     }
 }
@@ -922,6 +929,19 @@ header h2{color: #fff;}
     .banner ul li {
         font-size: 18px;
         padding: 10px 80px;
+    }
+
+    .third-section .banner-txt {
+        padding: 40px 0 20px 0;
+    }
+
+    .third-section .banner-txt p {
+        font-size: 14px;
+    }
+
+    .third-section h2 {
+        font-size: 25px;
+        margin-left: 10px;
     }
 }
 
@@ -973,6 +993,18 @@ header h2{color: #fff;}
         padding: 6px 20px;
         font-size: 15px;
         margin-left: -12px;
+    }
+
+    .banner ul li {
+        padding: 10px 20px 10px 85px;
+        height: 65px;
+        font-size: 17px;
+    }
+    .banner h1 {
+        font-size: 30px;
+    }
+    .banner h2 {
+        font-size: 22px;
     }
     
 }
@@ -1163,6 +1195,14 @@ header h2{color: #fff;}
         font-size: 17px;
     }
 
+    .banner ul {
+        display: block;
+    }
+
+    .banner-content {
+        float: none;
+    }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px){
@@ -1235,6 +1275,19 @@ header h2{color: #fff;}
         margin-left: -10px;
         margin-bottom: 10px;
     }
+
+    .banner ul li {
+        font-size: 12px;
+        padding: 10px 0 10px 38px;
+        height: auto;
+        background-size: 12%;
+    }
+    .banner h1 {
+        font-size: 22px;
+    }
+    .banner h2 {
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 801px) and (max-width: 991px){
@@ -1287,13 +1340,22 @@ header h2{color: #fff;}
 
 .logo{
     margin: 0;
-    padding: 10px 0;
-    width: 125px;
+    padding: 15px 0 0;
+    width: 140px;
 }
 
 .full-menu {
-    float: left;
-    width: 80%;
+    float: right;
+    width: 70%;
+}
+
+nav ul li {
+    padding: 10px 0 10px 10px;
+}
+
+nav.menu ul{
+    padding: 10px 0;
+    height: auto;
 }
 
 header .menu li a {
@@ -1448,6 +1510,8 @@ header .menu li a {
         min-height: 50px;
     }
 }
+
+@media screen and (min-width: 800px){
 
 div.wpcf7 .ajax-loader {
     display: inline !important;

@@ -14,10 +14,11 @@ get_header();
 </div>
 <!-- Main Content Start -->
 <div class="banner">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-ls-5 col-md-5 col-sm-6 col-xs-8">
 				<div class="banner-txt row">
+				<div class="banner-content">
 					<?php global $post;
 				$args = array( 'post_type' => 'home_section', 'category_name' => 'home-banner' );
 				$posts = get_posts( $args );
@@ -29,8 +30,9 @@ get_header();
 
 				<?php endforeach; ?>
 				</div>
+				</div>
 			</div>
-			<div class="col-md-7"></div>
+			<div class="col-ls-7 col-md-7 col-sm-6 col-xs-4"></div>
 		</div>
 	</div>
 </div>
