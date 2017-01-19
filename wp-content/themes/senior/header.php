@@ -100,7 +100,7 @@ wp_nav_menu( $params );
           </div>  
       </div>
       <div class="tablet-header">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
             <div class="callat_head">
           <div class="col-sm-6">
@@ -147,14 +147,14 @@ wp_nav_menu( $params );
             <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/images/msg.png" class="img-responsive">Contact</a></li>
           </ul>
           <nav class="menu-mobile">
-	<?php
-		$params = array(
-		'theme_location' => 'primary',
-		'menu_class' => 'level-1',
-		);
-		wp_nav_menu( $params );
-	?>
-		
+  <?php
+    $params = array(
+    'theme_location' => 'primary',
+    'menu_class' => 'level-1',
+    );
+    wp_nav_menu( $params );
+  ?>
+    
                       <!--<ul>
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">Our Programs</a></li>
